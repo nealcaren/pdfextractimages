@@ -9,8 +9,8 @@ class Pdfextractimages < Formula
   depends_on "astral-sh/uv/uv"
 
   def install
-    bin.install "bin/extractpdfimages"
-    bin.install "bin/pdfextractimages.py"
+    bin.install "bin/pdfextractimages"
+    bin.install "bin/pdfextractimages_core.py"
   end
 
   test do
