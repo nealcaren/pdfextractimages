@@ -1,0 +1,18 @@
+# PDF Image Extractor v1.0.0
+
+Initial release of the PDF Image Extractor tool.
+
+## Features
+- High-quality image extraction from PDF files
+- Metadata preservation (DPI, color space, format)
+- Duplicate image detection
+- Position tracking and ordering
+- Detailed JSON metadata output
+- Large image support
+- Multiple image format support (JPEG, PNG)
+
+## Installation
+```bash
+brew tap nealcaren/tools
+brew install pdfextractimages
+```
