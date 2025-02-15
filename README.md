@@ -55,10 +55,8 @@ Dimensions on page: 4.0" × 2.67"
 
 ## Requirements
 
-- Python 3.12 or higher
-- Dependencies (automatically installed):
-  - PyMuPDF (fitz)
-  - Pillow
+- [uv](https://github.com/astral-sh/uv) package installer
+  - All Python dependencies will be automatically installed
 
 ## License
 
