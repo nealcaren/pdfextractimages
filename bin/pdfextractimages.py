@@ -202,9 +202,25 @@ def extract_high_quality_images_from_pdf(pdf_path, output_folder):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python extract_images.py <PDF_FILE> [OUTPUT_FOLDER]")
-        sys.exit(1)
+    if len(sys.argv) < 2 or sys.argv[1] in ['-h', '--help']:
+        print("""
+PDF Image Extractor - Extract high-quality images from PDF files
+
+Usage: 
+    pdfextractimages <PDF_FILE> [OUTPUT_FOLDER]
+
+Arguments:
+    PDF_FILE        Path to the PDF file to process
+    OUTPUT_FOLDER   Optional: Directory to save extracted images
+                   (defaults to PDF_FILE_images)
+
+The tool will:
+- Extract all images in their original quality
+- Save detailed metadata in image_metadata.json
+- Skip duplicate images
+- Preserve image positioning information
+        """.strip())
+        sys.exit(0 if sys.argv[1] in ['-h', '--help'] else 1)
 
     pdf_file = sys.argv[1]
     # Create default output directory name based on PDF filename
