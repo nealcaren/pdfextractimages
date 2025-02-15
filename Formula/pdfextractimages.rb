@@ -5,7 +5,7 @@ class Pdfextractimages < Formula
   sha256 "REPLACE_WITH_ACTUAL_SHA256"
   license "MIT"
 
-  depends_on "python@3.12"
+  depends_on "python@3.8"
   depends_on "astral-sh/uv/uv"
 
   def install
