@@ -56,7 +56,8 @@ Dimensions on page: 4.0" × 2.67"
 ## Requirements
 
 - [uv](https://github.com/astral-sh/uv) package installer
-  - All Python dependencies will be automatically installed
+  - All Python dependencies will be automatically installed in an isolated virtual environment
+  - No system-wide Python packages are needed or modified
 
 ## License
 
