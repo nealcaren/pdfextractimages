@@ -6,8 +6,5 @@ if ! command -v uv &> /dev/null; then
     exit 1
 fi
 
-# Get the directory where the script is located
-SCRIPT_DIR="$(dirname "$(realpath "$0")")"
-
 # Run the script with uv, which ensures dependencies are installed temporarily
-uv run "${SCRIPT_DIR}/../pdfextractimages.py" "$@"
+uv run "$(dirname "$(realpath "$0")")/pdfextractimages.py" "$@"
